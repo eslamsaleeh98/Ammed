@@ -1,0 +1,220 @@
+:root {
+    --primary: #26C6DA; /* Teal */
+    --primary-dark: #0097A7;
+    --primary-light: #E0F7FA;
+    --secondary: #1A237E; /* Navy */
+    --accent: #FF9800; /* Orange for alerts/buttons */
+    --text-main: #263238;
+    --text-muted: #546E7A;
+    --bg-main: #FFFFFF;
+    --bg-alt: #F1F5F9;
+    --glass: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
+    --radius: 12px;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header & Nav */
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fff 0%, var(--primary-light) 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.hero-mockup img {
+    width: 320px;
+    border-radius: 40px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    border: 8px solid white;
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+
+/* Features */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    padding: 40px;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background: white;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 40px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.gallery-item {
+    min-width: 260px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 992px) {
+    .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .hero-content h1 { font-size: 2.5rem; }
+}
