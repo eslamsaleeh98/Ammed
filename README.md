@@ -1,9 +1,9 @@
-# Aqd (عقد) - Construction & Service Management Platform
+# Ammed (عمد) - Construction & Service Management Platform
 
 ![Banner](app-screenshots/home.png)
 
 ## 🌟 Overview
-**Aqd (عقد)** is a professional platform designed to streamline construction project management and connect clients with certified service providers. It offers a comprehensive suite of tools for bidding, tracking, and project execution.
+**Ammed (عمد)** is a high-performance platform designed to streamline construction project management. It bridges the gap between clients and contractors with a focus on reliability, scalability, and modern architecture.
 
 ## 📱 App Preview
 <p align="center">
@@ -16,36 +16,42 @@
 ---
 
 ## 👨‍💻 Developed By
-### **Eslam Ahmed**
+### **Eslam Saleh**
 **Senior Flutter & Full-Stack Developer**
 
-Dedicated to building high-performance, scalable mobile applications with a focus on user experience and robust architecture.
+Expert in developing high-end mobile solutions with a focus on Clean Architecture and performance optimization.
 
-- **Role**: Lead Developer (UI/UX Implementation, State Management, API Integration).
-- **Tech Stack**: Flutter, Dart, Firebase, Laravel.
-- **Expertise**: Construction Tech, Real-time systems, Secure payment flows.
-
-<p align="left">
-  <a href="https://github.com/eslamsaleeh98" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-</p>
+- **Portfolio**: [Visit Live Portfolio](https://eslamsaleeh98.github.io/Ammed/)
+- **GitHub**: [@eslamsaleeh98](https://github.com/eslamsaleeh98)
 
 ---
 
-## 🛠 Project Architecture
-- **Frontend**: Flutter for seamless cross-platform performance.
-- **State Management**: Advanced Bloc/Cubit patterns.
-- **Backend**: Scalable REST APIs.
-- **Interactions**: Real-time chat and notification systems.
+## 🛠 Technical Implementation (Programmatic Features)
 
-### 🚀 Live Showcase
+### 🏗 Architecture & State Management
+- **Clean Architecture**: Implemented a scalable multi-layer architecture (Data, Domain, Presentation) to ensure maintainability.
+- **Bloc/Cubit Pattern**: Robust state management for complex UI flows and real-time data updates.
+- **Dependency Injection**: Used `GetIt` for efficient service management.
+
+### ⚙️ Core Technical Features
+- **Dynamic Bidding System**: Programmed a real-time logic for contractors to submit bids with automatic validation and status tracking.
+- **Advanced Networking**: Built a custom API client using `Dio` with interceptors for token management and error handling.
+- **File Management**: Programmed a multipart upload system for large engineering documents and site images.
+- **Real-time Interactions**: Integrated Firebase Cloud Messaging (FCM) for instant project updates and chat notifications.
+- **Complex UI Components**: Developed custom reusable widgets and complex animations for a premium user experience.
+
+### 🔒 Security & Performance
+- **Secure Storage**: Implemented `flutter_secure_storage` for sensitive user tokens and credentials.
+- **Optimization**: Lazy loading of project lists and image caching to ensure smooth performance on low-end devices.
+
+---
+
+## 🚀 How to Run locally
+1. Clone the repository.
+2. Run `flutter pub get`.
+3. Launch on emulator or physical device.
+
+### 🌐 Live Showcase
 <a href="https://eslamsaleeh98.github.io/Ammed/" target="_blank">
   <img src="https://img.shields.io/badge/Live%20Demo-Explore%20Portfolio-26C6DA?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
 </a>
-
-> [!NOTE]
-> This project demonstrates my ability to handle complex business logic and create professional-grade user interfaces for the construction industry.
